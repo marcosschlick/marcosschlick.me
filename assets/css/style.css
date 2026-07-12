@@ -8,16 +8,6 @@ body {
 
 a {
   color: #324b64;
-  text-decoration: underline;
-  text-decoration-color: #9b9b9b;
-  text-underline-offset: 3px;
-  padding: 2px 4px;
-}
-
-a:hover {
-  color: #327de1;
-  background-color: #c8e1fa;
-  text-decoration-color: #327de1;
 }
 
 a:focus-visible {
@@ -73,12 +63,33 @@ h2 {
   color: #324b64;
 }
 
-h3 {
-  color: #282828;
-}
-
 .period {
   color: #6b6b6b;
+}
+
+.cv-link {
+  display: inline-block;
+  border-bottom: 2px solid #647d96;
+  padding: 0.25rem 0;
+  text-decoration: none;
+  font-weight: 600;
+  transition:
+    border-color 150ms ease,
+    transform 150ms ease;
+}
+
+.cv-link::after {
+  content: " →";
+  color: #327de1;
+}
+
+.cv-link:hover {
+  border-color: #327de1;
+  transform: translateX(3px);
+}
+
+.cv-link:active {
+  transform: translateX(0);
 }
 
 .contact-links {
@@ -86,22 +97,49 @@ h3 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .contact-links a {
-  font-size: 30px;
-  margin: 0;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  box-shadow: 0 2px 0 #647d96;
+  padding: 0.55rem 0.8rem;
   text-decoration: none;
+  transition:
+    color 150ms ease,
+    background-color 150ms ease,
+    box-shadow 150ms ease,
+    transform 150ms ease;
 }
 
 .contact-links a:hover {
-  text-decoration: underline;
+  color: #f8f8f8;
+  background-color: #324b64;
+  box-shadow: 0 4px 0 #327de1;
+  transform: translateY(-2px);
+}
+
+.contact-links a:active {
+  box-shadow: 0 2px 0 #647d96;
+  transform: translateY(0);
 }
 
 @media (max-width: 600px) {
   .site-header {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cv-link,
+  .contact-links a {
+    transition: none;
+  }
+
+  .cv-link:hover,
+  .contact-links a:hover {
+    transform: none;
   }
 }
