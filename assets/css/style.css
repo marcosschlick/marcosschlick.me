@@ -1,15 +1,34 @@
 body {
-  background-color: rgb(250, 250, 250);
-}
-
-.main-title,
-.profile {
+  background-color: #f8f8f8;
+  color: #282828;
   text-align: center;
-  margin-top: 3%;
   font-family: monospace;
+  font-size: 18px;
 }
 
-.main-title h1 {
+a {
+  color: #324b64;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding: 2px 4px;
+}
+
+a:hover {
+  color: #327de1;
+  background-color: #c8e1fa;
+}
+
+a:focus-visible {
+  outline: 2px solid #324b64;
+  outline-offset: 3px;
+}
+
+.site-header,
+.profile {
+  margin-top: 3%;
+}
+
+.site-header h1 {
   font-size: 80px;
   font-weight: 600;
 }
@@ -23,26 +42,41 @@ body {
   font-weight: 500;
 }
 
-.disclaimer {
-  padding-top: 1%;
-  text-align: center;
-  font-family: monospace;
-  font-size: 15px;
+main {
+  max-width: 720px;
+  margin: 0 auto;
 }
 
-.contacts {
+section {
+  margin-top: 3rem;
+}
+
+h2 {
+  color: #324b64;
+}
+
+h3 {
+  color: #647d96;
+}
+
+.period {
+  color: #6b6b6b;
+}
+
+.contact-links {
   margin-top: 5%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-.contacts a {
+.contact-links a {
   font-size: 30px;
-  color: black;
-  text-align: center;
-  margin: 5%;
+  margin: 0;
   text-decoration: none;
 }
 
-.contacts a:hover {
-  color: rgb(0, 145, 255);
+.contact-links a:hover {
+  text-decoration: underline;
 }

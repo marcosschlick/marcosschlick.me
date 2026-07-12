@@ -8,25 +8,107 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="main-title">
+    <header class="site-header">
       <h1>Hello, World!</h1>
-    </div>
-    <div class="profile">
-      <img src="./assets/images/profile.jpg" alt="Marcos Schlick" />
-      <p>I'm Marcos Schlick!</p>
-    </div>
-    <div>
-      <p class="disclaimer">There is nothing to see here for now.</p>
-    </div>
-    <div class="contacts">
-      <a href="https://www.linkedin.com/in/marcosschlick" target="_blank"
-        >LinkedIn</a
-      >
-      <a href="https://github.com/marcosschlick" target="_blank">GitHub</a>
-      <a href="http://lattes.cnpq.br/6323708343951576" target="_blank"
-        >Lattes</a
-      >
-      <a href="https://orcid.org/0009-0000-4874-8681" target="_blank">ORCID</a>
-    </div>
+      <div class="profile">
+        <img src="./assets/images/profile.jpg" alt="Marcos Schlick" />
+        <p>I'm Marcos Schlick!</p>
+      </div>
+    </header>
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I'm a binational Systems Analysis and Development student interested
+          in explainable AI, heuristic planning, and autonomous robot
+          navigation.
+        </p>
+      </section>
+      <section id="education">
+        <h2>Education</h2>
+
+        <article>
+          <h3>Systems Analysis and Development</h3>
+          <p>IFSul (Brazil) and UTEC (Uruguay)</p>
+          <p class="period"><time datetime="2024">2024</time>-Present</p>
+        </article>
+      </section>
+      <section id="experience">
+        <h2>Experience</h2>
+
+        <article>
+          <h3>IT Support Intern — IFSul</h3>
+          <p class="period">
+            <time datetime="2024-11">November 2024</time>-Present
+          </p>
+          <p>
+            Provide user support, maintain computers and printers, install
+            software, and assist with server maintenance.
+          </p>
+        </article>
+        <article>
+          <h3>Outreach Scholarship Holder — IFSul</h3>
+          <p class="period">
+            <time datetime="2024-08">August 2024</time>-<time datetime="2024-12"
+              >December 2024</time
+            >
+          </p>
+          <p>
+            Taught chess and basic computer skills to children and young people,
+            supporting digital inclusion and cognitive development.
+          </p>
+        </article>
+        <article>
+          <h3>Software Development Scholarship Holder — Compass UOL</h3>
+          <p class="period">
+            <time datetime="2025-02">February 2025</time>-<time
+              datetime="2025-07"
+              >July 2025</time
+            >
+          </p>
+          <p>
+            Developed Node.js APIs for an Open Finance platform using Docker,
+            AWS, Git, and SQL in an agile environment.
+          </p>
+        </article>
+      </section>
+      <section id="curriculum-vitae">
+        <h2>CV</h2>
+        <p>
+          A complete overview of my education and experience is available in my
+          curriculum vitae.
+        </p>
+        <a href="./assets/documents/cv.pdf">View CV</a>
+      </section>
+    </main>
+    <footer>
+      <nav class="contact-links" aria-label="Contact links">
+        <a href="mailto:marcosschlick.sl003@academico.ifsul.edu.br">Email</a>
+        <a
+          href="https://www.linkedin.com/in/marcosschlick"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        <a
+          href="https://github.com/marcosschlick"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+        <a
+          href="http://lattes.cnpq.br/6323708343951576"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Lattes</a
+        >
+        <a
+          href="https://orcid.org/0009-0000-4874-8681"
+          target="_blank"
+          rel="noopener noreferrer"
+          >ORCID</a
+        >
+      </nav>
+    </footer>
   </body>
 </html>
