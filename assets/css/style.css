@@ -9,6 +9,7 @@ body {
 a {
   color: #324b64;
   text-decoration: underline;
+  text-decoration-color: #9b9b9b;
   text-underline-offset: 3px;
   padding: 2px 4px;
 }
@@ -16,10 +17,11 @@ a {
 a:hover {
   color: #327de1;
   background-color: #c8e1fa;
+  text-decoration-color: #327de1;
 }
 
 a:focus-visible {
-  outline: 2px solid #324b64;
+  outline: 2px solid #327de1;
   outline-offset: 3px;
 }
 
@@ -72,7 +74,7 @@ h2 {
 }
 
 h3 {
-  color: #647d96;
+  color: #282828;
 }
 
 .period {
